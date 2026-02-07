@@ -1,7 +1,8 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Programa Profesional de Natación</title>
 
   <!-- Estilos base del sitio -->
@@ -10,6 +11,7 @@
   <!-- Estilos exclusivos de esta página -->
   <link rel="stylesheet" href="css/comprar.css">
 </head>
+<body>
 
 <!-- =========================================
      PROGRAMA DE NATACIÓN · ONLINE + PRESENCIAL
@@ -28,7 +30,7 @@
     <div class="program-intro">
       <p>
         Un sistema estructurado de entrenamiento diseñado para mejorar técnica, eficiencia y confianza en el agua.
-        Combina seguimiento online personalizado con una sesión presencial (siempre que haya permiso de tu club para entrar a sus intalaciones) en alberca
+        Combina seguimiento online personalizado con una sesión presencial (siempre que haya permiso de tu club para entrar a sus instalaciones) en alberca
         dentro de la ciudad o área disponible.
       </p>
     </div>
@@ -52,11 +54,11 @@
       <ul>
         <li>Adultos principiantes e intermedios</li>
         <li>Adultos que desean perfeccionar técnica</li>
-        <li>jovenes en formación deportiva</li>
+        <li>Jóvenes en formación deportiva</li>
       </ul>
 
       <p class="minor-note">
-        <strong>Importante:</strong> En el caso de jovenes, las sesiones online deben realizarse
+        <strong>Importante:</strong> En el caso de jóvenes, las sesiones online deben realizarse
         siempre bajo la supervisión directa de un adulto responsable mayor de edad.
       </p>
     </div>
@@ -93,7 +95,6 @@
       </div>
     </div>
 
-
     <!-- AVISO PROFESIONAL -->
     <div class="professional-disclaimer">
       <h3>Aviso de Responsabilidad Profesional</h3>
@@ -114,6 +115,7 @@
   </div>
 
 </section>
+
 <script>
 /* =========================================
    FAQ ACORDEÓN
@@ -137,12 +139,16 @@ cards.forEach(card => {
 });
 
 /* =========================================
-   ABRIR MODAL EVALUACIÓN (usa tu modal actual)
+   ABRIR MODAL EVALUACIÓN
 ========================================= */
 document.querySelectorAll('.open-evaluacion').forEach(btn => {
   btn.addEventListener('click', (e) => {
     e.preventDefault();
-    document.getElementById('hamburgerModal').classList.add('active');
+    const modal = document.getElementById('hamburgerModal');
+    if(modal) modal.classList.add('active');
   });
 });
 </script>
+
+</body>
+</html>
