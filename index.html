@@ -625,6 +625,18 @@ document.querySelectorAll('.footer-modal').forEach(modal => {
 });
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const hamburgerModal = document.getElementById("hamburgerModal");
+
+  // 🔥 Siempre cerrar la hamburguesa al cargar la página
+  if (hamburgerModal) {
+    hamburgerModal.classList.remove("active");
+  }
+
+});
+</script>
 
 
 </body>
