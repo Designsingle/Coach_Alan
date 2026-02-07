@@ -1,0 +1,148 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Programa Profesional de Natación</title>
+
+  <!-- Estilos base del sitio -->
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <!-- Estilos exclusivos de esta página -->
+  <link rel="stylesheet" href="css/comprar.css">
+</head>
+
+<!-- =========================================
+     PROGRAMA DE NATACIÓN · ONLINE + PRESENCIAL
+     ========================================= -->
+
+<section class="swim-program">
+
+  <div class="container">
+
+    <h2 class="section-title">Programa de Natación</h2>
+    <p class="section-subtitle">
+      Entrenamiento técnico personalizado · Modalidad Online + 1 Sesión Presencial 
+    </p>
+
+    <!-- INTRO -->
+    <div class="program-intro">
+      <p>
+        Un sistema estructurado de entrenamiento diseñado para mejorar técnica, eficiencia y confianza en el agua.
+        Combina seguimiento online personalizado con una sesión presencial (siempre que haya permiso de tu club para entrar a sus intalaciones) en alberca
+        dentro de la ciudad o área disponible.
+      </p>
+    </div>
+
+    <!-- QUE INCLUYE -->
+    <div class="program-features">
+      <h3>¿Qué incluye el programa?</h3>
+      <ul>
+        <li>Evaluación técnica inicial</li>
+        <li>Plan de entrenamiento personalizado</li>
+        <li>Corrección biomecánica y técnica</li>
+        <li>Rutinas progresivas semanales</li>
+        <li>Seguimiento por videollamada</li>
+        <li>Se puede agendar 1 sesión presencial en alberca (según tu ciudad y el permiso de tu club)</li>
+      </ul>
+    </div>
+
+    <!-- ENFOQUE POR EDADES -->
+    <div class="program-levels">
+      <h3>Dirigido a:</h3>
+      <ul>
+        <li>Adultos principiantes e intermedios</li>
+        <li>Adultos que desean perfeccionar técnica</li>
+        <li>jovenes en formación deportiva</li>
+      </ul>
+
+      <p class="minor-note">
+        <strong>Importante:</strong> En el caso de jovenes, las sesiones online deben realizarse
+        siempre bajo la supervisión directa de un adulto responsable mayor de edad.
+      </p>
+    </div>
+
+    <!-- FAQ -->
+    <div class="program-faq">
+      <h3>Preguntas Frecuentes</h3>
+
+      <div class="faq-item">
+        <h4>¿Necesito experiencia previa?</h4>
+        <p>No. El programa se adapta desde nivel principiante hasta intermedio.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>¿Cómo funciona el seguimiento online?</h4>
+        <p>
+          Se realizan videollamadas técnicas programadas donde se corrige postura, respiración,
+          coordinación y se ajusta el plan semanal según progreso.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h4>¿Qué aporta la sesión presencial?</h4>
+        <p>
+          Corrección técnica en agua, ajustes en tiempo real y evaluación práctica del avance.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h4>¿Cuándo veré resultados?</h4>
+        <p>
+          Con constancia, la mayoría de los alumnos presentan mejoras técnicas visibles en 3 a 6 semanas.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- AVISO PROFESIONAL -->
+    <div class="professional-disclaimer">
+      <h3>Aviso de Responsabilidad Profesional</h3>
+      <p>
+        El programa de entrenamiento es de carácter formativo y técnico. La práctica en alberca
+        debe realizarse en instalaciones seguras y bajo supervisión adecuada.
+      </p>
+      <p>
+        En el caso de menores de edad, es obligatoria la presencia y supervisión de un adulto responsable
+        durante las sesiones online y en la práctica acuática.
+      </p>
+      <p>
+        El alumno y/o tutor asumen la responsabilidad total de cumplir con las normas de seguridad
+        de la instalación donde se realicen los entrenamientos.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+<script>
+/* =========================================
+   FAQ ACORDEÓN
+========================================= */
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('active');
+  });
+});
+
+/* =========================================
+   PLAN SELECCIONADO
+========================================= */
+const cards = document.querySelectorAll('.pricing-card');
+
+cards.forEach(card => {
+  card.addEventListener('click', () => {
+    cards.forEach(c => c.classList.remove('selected'));
+    card.classList.add('selected');
+  });
+});
+
+/* =========================================
+   ABRIR MODAL EVALUACIÓN (usa tu modal actual)
+========================================= */
+document.querySelectorAll('.open-evaluacion').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.getElementById('hamburgerModal').classList.add('active');
+  });
+});
+</script>
