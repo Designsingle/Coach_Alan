@@ -966,3 +966,20 @@ body {
         width: 130px;
     }
 }
+/* =========================================================
+   FIX · PAGE 1 MOBILE LANDSCAPE
+   ========================================================= */
+
+@media (max-width: 900px) and (orientation: landscape) {
+
+    .beneficios {
+        gap: 18px;
+        margin-top: 20px;
+    }
+
+    .beneficio {
+        width: 90px;        /* más pequeños en horizontal */
+        aspect-ratio: 1 / 1;
+    }
+
+}
