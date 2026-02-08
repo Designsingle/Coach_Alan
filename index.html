@@ -55,7 +55,7 @@
   }
 
   .nav-icons span:hover {
-    background: rgba(255, 255, 255, 0.703);
+    background: rgba(255, 255, 255, 0);
   }
   </style>
 </head>
@@ -81,7 +81,6 @@
         <li class="divider"></li>
 <li onclick="window.location.href='./comprar.html'">FAQs</li>
         <p class="price">...</p>
-        <li class="divider"></li>
       </ul>
     </nav>
   </div>
@@ -625,20 +624,7 @@ document.querySelectorAll('.footer-modal').forEach(modal => {
 });
 </script>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  const hamburgerModal = document.getElementById("hamburgerModal");
-
-  // 🔥 Siempre cerrar la hamburguesa al cargar la página
-  if (hamburgerModal) {
-    hamburgerModal.classList.remove("active");
-  }
-
-});
-</script>
 
 
 </body>
 </html>
-
