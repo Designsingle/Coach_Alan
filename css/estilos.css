@@ -388,11 +388,11 @@ body {
    ========================================================= */
 .page-footer {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 20px auto 0;
   position: relative;
 
-  aspect-ratio: 12 / 5;
+  aspect-ratio: 4 / 4;
   max-height: 380px; /* evita que sea enorme en desktop */
   min-height: 220px; /* evita que se aplaste */
 
