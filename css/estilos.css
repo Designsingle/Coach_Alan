@@ -966,16 +966,28 @@ body {
         width: 130px;
     }
 }
+/* =========================================================
+   AJUSTE IMAGEN MODAL · PAGE 1
+   ========================================================= */
+
+/* Tamaño base más pequeño */
+.beneficio-preview {
+    width: 85px;
+    height: 85px;
+}
+
+/* Móvil horizontal */
+@media (max-width: 900px) and (orientation: landscape) {
+    .beneficio-preview {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* Desktop */
 @media (min-width: 1024px) {
-
-  .modal-contenido {
-      max-width: 260px;
-      padding: 22px 18px;
-  }
-
-  .beneficio-preview {
-      width: 90px;
-      height: 90px;
-  }
-
+    .beneficio-preview {
+        width: 80px;
+        height: 80px;
+    }
 }
