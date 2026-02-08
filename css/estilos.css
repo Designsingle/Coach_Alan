@@ -1009,3 +1009,31 @@ body {
         height: 80px;
     }
 }
+
+/* ESTRUCTURA BASE */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* El contenido principal crece y empuja la firma */
+.page,
+main,
+.container {
+  flex: 1;
+}
+
+/* FIRMA INFERIOR */
+.footer-signature {
+  margin-top: auto;   /* 🔥 Esto la empuja hasta abajo */
+  text-align: center;
+  padding: 20px 0;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
