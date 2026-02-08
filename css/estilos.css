@@ -52,27 +52,18 @@ body {
 }
 
 /* =========================================================
-   HERO PAGE 1
+   HERO PAGE 1 · FORMATO 1:1
    ========================================================= */
 .hero {
   position: relative;
   text-align: center;
-  max-width: 900px;      /* limita ancho en pantallas grandes */
-  margin: 0 auto;        /* centra */
-}
 
-/* Tablet */
-@media (min-width: 768px) {
-  .hero {
-    max-width: 700px;
-  }
-}
+  width: 100%;
+  max-width: 600px;   /* controla el tamaño máximo en web */
+  aspect-ratio: 1 / 1;
 
-/* Desktop grande */
-@media (min-width: 1200px) {
-  .hero {
-    max-width: 600px;    /* más compacto */
-  }
+  margin: 0 auto;     /* centrar */
+  overflow: hidden;   /* por si hay imagen */
 }
 
 /* =========================================================
